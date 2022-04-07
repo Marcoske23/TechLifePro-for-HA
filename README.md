@@ -164,7 +164,7 @@ Example configuration to create an entity called `light.yourbulb`.
 
 ``` yaml
 light: 
-    - platform: techlife_bulb_control
+    - platform: TechLifePro_control
       mac_address: "00:00:00:00:00:00" # Get this from your router in my case lights have this name: lwipr91h_sta
       name: "YourBulb"
       broker_url: 192.168.0.0
