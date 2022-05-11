@@ -151,7 +151,7 @@ class TechlifeControl(LightEntity):
                     elif state_hex=="24":
                         self._state=False
                     ############ actualizar RGB ###############
-                    rgb_hex=(message_hex[4:6],message_hex[6:10],message_hex[10:14])
+                    rgb_hex=(message_hex[2:6],message_hex[6:10],message_hex[10:14])
                     rgb_10k=(int(to_little(rgb_hex[0]),16),int(to_little(rgb_hex[1]),16),int(to_little(rgb_hex[2]),16))
                     rgb_255=tuple(x*255/10000 for x in rgb_10k)
                     hs=color_util.color_RGB_to_hs(rgb_255[0],rgb_255[1],rgb_255[2])
